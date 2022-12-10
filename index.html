@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts  Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;700;800;900&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Fonts Awesome link -->
+    <script src="https://kit.fontawesome.com/3bf8c869a3.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NavBar -->
+<nav class="navbar flex">
+    <div class="brand">
+        <img src="/images/Typing.com logo.png" class="brand-img">
+    <h4 class="brand-first-text">Typing.<span class="brand-second-text">com</span></h4>
+    </div>
+    <ul class="nav flex">
+        <li class="nav-item"><a href="#"class="nav-link" >Typing Tests</a></li>
+        <li class="nav-item"><a href="#"class="nav-link">Typing Course</a></li>
+        <li class="nav-item"><a href="#"class="nav-link">Games  </a> </li>
+        <li class="nav-item"><a href="#"class="nav-link">About Us  </a> </li>
+        <li class="nav-item"><a href="#"class="nav-link">Contact Us</a> </li>
+        <li class="nav-item"><a href="#"class="nav-link">Sign Up   </a> </li>
+        <li class="nav-item"><a href="#"class="nav-link">Sign in   </a> </li>
+    </ul>
+</nav>
+<!-- Main Section -->
+<section class="main">
+     <h1 class="main-heading"><em>Check Your Typing Skill</em></h1>
+
+     <div class="container flex">
+
+        <div class="container-first-image">
+            <img  class="lady" src="/images/lady (1).svg" alt="lady's image">
+        </div>
+
+        <div class="container-main flex">
+
+            <div class="Time flex">
+ <div class="container-main-image">
+    <i class="fa-solid fa-clock fa-2x"></i>
+        </div>
+<div class="container-text">
+    <select class="test-time" aria-placeholder="1 Minute Test">
+        <option value="1 minute">1 Minute Test</option>
+        <option value="2 minute">2 Minute Test</option>
+        <option value="3 minute">3 Minute Test</option>
+        <option value="5 minute">5 Minute Test</option>
+    </select>
+    </div>
+         </div>
+
+         <div class="text-type flex">
+            <div class="text-type-img">
+                <i class="fa-solid fa-file-invoice fa-2x"></i>
+            </div>
+            <div class="text-type-options">
+<select class="text-type-dropdown test-time">
+    <option value="Easy">Easy</option>
+    <option value="Medium">Medium</option>
+    <option value="Hard">Hard</option>
+</select>
+            </div>
+         </div>
+<div class="button">
+    <a href="#" class="Start-button" onclick="start()"><span>Start Test</span></a>
+</div>
+
+
+        </div>
+
+        <div class="container-second-image">
+        <img src="/images/gentleman (2).svg" class="gentlemen" alt=" a men's image">
+    </div>
+     </div>
+</section>
+<!-- Text Area -->
+
+<section class="text-area flex Display ">
+    <div class="text-container flex">
+        <div class="home-button-div">
+  <a href="#"  onclick="home()" class="home-button Start-button">Home</a>
+    </div>
+    <div class="countdown-container">
+         <h4 id="Countdown">1:00</h4>
+    </div>
+   
+<div class="paragraph">
+<p class="para-txt" id="ptext"></p>
+</div>
+<div class="submit-button-div">
+<a href="#" class="submit-button Start-button" onclick="home()">Submit</a>
+</div> 
+    </div>
+<div class="area">
+<textarea id="text" rows="9" cols="60" placeholder="Start Typing here...." onclick="countWords()" onkeydown="preventBackspace()" autofocus>
+ </textarea>
+</div>
+</section>
+
+<!-- Result Section -->
+<section class="result Display">
+        <div class="Back-button">
+     <a href="#" class="Back Start-button "onclick="back()">Back</a>
+    </div>
+<div class="result-container">
+    <h2 class="result-heading"><i class="fa-solid fa-gauge"></i>     Your Typing Speed </h2>
+    <h2 class="speed"><span id="wpm">0</span> WPM.</h2>
+     <h2 class="accu">And Accuracy is <span id="accuracy">0</span>%</h2>
+    </div>
+</section>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+<footer>
+</footer>
+</html>
